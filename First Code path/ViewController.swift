@@ -28,7 +28,9 @@ class ViewController: UIViewController {
     @IBAction func onClick(_ sender: Any) {
         print("hello")
         view.endEditing(true)
-       view.backgroundColor = .gray
+//        view.backgroundColor = .gray
+        
+        view.backgroundColor = UIColor(patternImage: UIImage(named:"blue")!)
     }
     
     @IBAction func calculator(_ sender: Any) {
@@ -43,6 +45,14 @@ class ViewController: UIViewController {
         totalLabel.text = String (format: "$%.2f", total)
     }
   
+    @IBAction func onBillClick(_ sender: Any) {
+//        view.backgroundColor = .blue
+        view.backgroundColor = UIColor(patternImage: UIImage(named:"blue")!)
+    }
+//
+//
+//
+//    }
     
     @IBOutlet weak var billField: UITextField!
     
